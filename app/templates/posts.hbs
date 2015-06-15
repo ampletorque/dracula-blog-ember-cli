@@ -1,0 +1,26 @@
+<div class="home">
+
+<h1>Dracula's Blog</h1>
+
+<div class="col-md-4">
+<ul clas="list-unstyled">
+
+{{#each model as |post|}}
+  <li>
+    <li>{{#link-to 'post' post.id}}{{post.title}}{{/link-to}}</li>
+  </li>
+{{/each}}
+
+</ul>
+
+
+<p><a href='#' {{action 'sortByTitle'}}>Sort by title</a></p>
+
+{{#link-to 'new-post' classNames="btn btn-primary"}}New Scary Post{{/link-to}}
+</div>
+
+<div class="col-md-8">
+  {{outlet}}
+</div>
+
+</div>

@@ -1,0 +1,10 @@
+<h2>New Comment</h2>
+
+<form>
+  <div class="form-group">
+    <label for="commentText">Your thoughts:</label>
+    {{textarea value=commentText id="commentText" class="form-control" row="5"}}
+  </div>
+
+  <button class="btn btn-primary" {{action 'save'}}>Add your comment</button>
+</form>

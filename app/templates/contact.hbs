@@ -1,0 +1,23 @@
+<h1>Contact The Count</h1>
+
+<div class="row">
+  <div class="col-md-6">
+    <p class="lead">
+      Drop me a line, see if I'll bite...
+    </p>
+    <ul>
+      <!-- <li>{{#link-to 'sonar'}}Echolocate Me{{/link-to}}</li> -->
+      <li>{{#link-to 'email'}}Email Me{{/link-to}}</li>
+    </ul>
+
+    {{#if messageSent}}
+      <p>Thank you. Your message has been sent. Your confirmation number is: {{confirmationNumber}}.</p>
+    {{else}}
+      <p>Or, <a href="#" {{action 'sendMessage'}}>click here</a> to send a secret message.</p>
+    {{/if}}
+
+  </div>
+  <div class="col-md-6">
+    {{outlet}}
+  </div>
+</div>

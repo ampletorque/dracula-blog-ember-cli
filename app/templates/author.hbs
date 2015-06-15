@@ -1,0 +1,12 @@
+<h1>About Dracula</h1>
+
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<button class="btn btn-primary" {{action 'showRealName'}}>Click here to learn Dracula's real name!</button>
+{{#if isPictureShowing}}
+  <button class="btn btn-success" {{action 'hidePicture'}}>Hide that scary dude</button>
+  <br>
+  <p><img src="http://4.bp.blogspot.com/-haiMx--cswc/TbF88VM2TNI/AAAAAAAAAc0/1OIyo3AY_MY/s1600/vlcsnap-2011-04-21-22h18m02s183.png" alt="A terrifying picture of Dracula"/></p>
+{{else}}
+  <button class="btn btn-danger" {{action 'showPicture'}}>Click here to see a scary picture</button>
+{{/if}}
