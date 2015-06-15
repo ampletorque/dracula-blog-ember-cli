@@ -1,1 +1,7 @@
+https://github.com/ampletorque/epicodus-code-review-6-12-ember-qanda-pyr
+https://www.learnhowtoprogram.com/lessons/dracula-blog-upgrade-monday-classwork
+https://www.youtube.com/watch?v=eV6JRW6gOyI
+http://localhost:4200
+http://localhost:4200/api/posts/2
 https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters
+
