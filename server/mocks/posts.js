@@ -55,6 +55,7 @@ if (!Array.prototype.filter) {
     return res;
   };
 }
+
 var posts = [
   {
     id: 1,
@@ -100,6 +101,7 @@ module.exports = function(app) {
   });
 
   postsRouter.post('/', function(req, res) {
+    
     res.status(201).end();
   });
 
